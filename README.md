@@ -10,8 +10,8 @@ No macOS/Linux, use o Terminal.
 2️⃣ Clone o Repositório
 
 Abra o terminal e rode:
-git clone https://github.com/SeuUsuario/NomeDoRepositorio.git
-Depois, entre na pasta do projeto:
+git clone https://github.com/Breno-Filho/FrontEnd-DesafioFast.git
+Depois, entre na pasta do projeto com o caminho:
 cd FrontEnd-DesafioFast
 
 3️⃣ Abra no Navegador

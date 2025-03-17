@@ -2,10 +2,11 @@
 
 Como Rodar a Aplicação a Partir do GitHub:
 
-1️⃣ Baixe o Git (se ainda não tiver)
+1️⃣ Baixe o Git e Node (se ainda não tiver)
 
 No Windows, pode usar o Prompt de Comando ou PowerShell.
 No macOS/Linux, use o Terminal.
+Como esse projeto tem partes com JavaScript, é necessário tem alguma versão do Node instalada na sua máquina.
 
 2️⃣ Clone o Repositório
 

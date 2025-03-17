@@ -1,4 +1,3 @@
-// Mock de dados
 const colaboradores = [
     { id: 1, nome: "João" },
     { id: 2, nome: "Maria" },
@@ -22,7 +21,6 @@ const workshops = [
     }
 ];
 
-// Função para exibir colaboradores na página index.html
 function exibirColaboradores() {
     const colaboradoresDiv = document.getElementById('colaboradores');
     colaboradoresDiv.innerHTML = '<h2>Colaboradores</h2>';
@@ -31,7 +29,6 @@ function exibirColaboradores() {
     });
 }
 
-// Função para exibir workshops na página workshops.html
 function exibirWorkshops() {
     const workshopsDiv = document.getElementById('workshops');
     workshopsDiv.innerHTML = '<h2>Workshops</h2>';
@@ -40,19 +37,16 @@ function exibirWorkshops() {
     });
 }
 
-// Função para redirecionar para a página de detalhes do workshop
 function irParaDetalhes(workshopId) {
     localStorage.setItem('workshopId', workshopId);
     window.location.href = 'workshop-details.html';
 }
 
-// Função para redirecionar para a página de workshops de um colaborador
 function irParaColaborador(colaboradorId) {
     localStorage.setItem('colaboradorId', colaboradorId);
-    window.location.href = 'colaborador-details.html'; // Nova página para detalhes do colaborador
+    window.location.href = 'colaborador-details.html'; 
 }
 
-// Função para exibir detalhes do workshop na página workshop-details.html
 function exibirDetalhes() {
     const workshopId = localStorage.getItem('workshopId');
     const workshop = workshops.find(w => w.id == workshopId);
@@ -72,7 +66,6 @@ function exibirDetalhes() {
     }
 }
 
-// Função para exibir detalhes do colaborador na nova página colaborador-details.html
 function exibirDetalhesColaborador() {
     const colaboradorId = localStorage.getItem('colaboradorId');
     const colaborador = colaboradores.find(c => c.id == colaboradorId);
@@ -90,7 +83,6 @@ function exibirDetalhesColaborador() {
     }
 }
 
-// Inicializa a aplicação com base na página atual
 document.addEventListener('DOMContentLoaded', () => {
     if (document.getElementById('colaboradores')) {
         exibirColaboradores();
